@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+  <servlet>
+    <servlet-name>frontcontroller</servlet-name>
+    <servlet-class>com.paic.pafa.framework.frontcontrol.FrontController</servlet-class>
+    <init-param>
+      <param-name>auditlogger</param-name>
+      <param-value>MyAuditLogger</param-value>
+    </init-param>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>GBK</param-value>
+    </init-param>
+    <init-param>
+      <param-name>errorlogger</param-name>
+      <param-value>MyErrorLogger</param-value>
+    </init-param>
+    <init-param>
+      <param-name>errorpage</param-name>
+      <param-value>Error.screen</param-value>
+    </init-param>
+    <init-param>
+      <param-name>havescreencontroller</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    <init-param>
+      <param-name>requestmappingfile</param-name>
+      <param-value>mappings.xml</param-value>
+    </init-param>
+    <init-param>
+      <param-name>screenmappingfile</param-name>
+      <param-value>screenmappings.xml</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>frontcontroller</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>frontcontroller</servlet-name>
+    <url-pattern>*.screen</url-pattern>
+  </servlet-mapping>
+</web-app>

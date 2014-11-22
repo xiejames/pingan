@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="GB2312"?>
+<mappings>
+	<url-mapping url="insertPolicy.do" next="InsertResult.screen"
+		delegate-action-class="com.paic.pafa2.web.delegate.PolicyDelegate"
+		delegate-method="insert" />
+	<url-mapping url="query.do" next="QueryResult.screen"
+		delegate-action-class="com.paic.pafa2.web.delegate.PolicyDelegate"
+		delegate-method="query" />
+	<url-mapping url="QueryBeforeUpdate.do" next="Update.screen"
+		delegate-action-class="com.paic.pafa2.web.delegate.PolicyDelegate"
+		delegate-method="QueryBeforeUpdate" />
+	<url-mapping url="update.do" next="UpdateResult.screen"
+		delegate-action-class="com.paic.pafa2.web.delegate.PolicyDelegate"
+		delegate-method="update" />
+	<url-mapping url="delete.do" next="DeleteResult.screen"
+		delegate-action-class="com.paic.pafa2.web.delegate.PolicyDelegate"
+		delegate-method="delete" />
+</mappings>

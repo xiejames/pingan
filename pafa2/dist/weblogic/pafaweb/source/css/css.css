@@ -1,0 +1,177 @@
+BODY {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	SCROLLBAR-FACE-COLOR: #799ae1; 
+	FONT-SIZE: 12px; 
+	BACKGROUND: #F9F9F9; 
+	SCROLLBAR-HIGHLIGHT-COLOR: #799ae1; 
+	SCROLLBAR-SHADOW-COLOR: #FFFFFF; 
+	SCROLLBAR-3DLIGHT-COLOR: #799ae1; 
+	SCROLLBAR-ARROW-COLOR: #FFFFFF; 
+	SCROLLBAR-TRACK-COLOR: #aabfec; 
+	SCROLLBAR-DARKSHADOW-COLOR: #799ae1
+
+}
+INPUT {
+	FONT-SIZE: 12px;
+	height: auto;
+	width: auto;
+	background-color: #FFFFFF;
+	border: 1px solid #B4D1FE;
+	margin: 1px;
+	padding: 1px;
+	display: inline;
+}
+TEXTAREA {
+	FONT-SIZE: 12px;
+	border: 1px solid #B4D1FE;
+}
+
+
+#.box1
+{
+border: 1px solid #B4D1FE;
+width: 40px;
+height: 18px;
+clip: rect( 0px, 80px, 18px, 0px );
+overflow: hidden;
+}
+
+#select
+{
+    position: relative;
+    left: -2px;
+    top: -2px;
+    width: 100px;
+    line-height: 20px;
+    color: #222222;
+    border-style: none;
+    border-width: 0px;
+    font-size: 12px;
+}
+
+
+
+
+.button1 { font-size: 12px; color: #000000; text-decoration: none; border: 1px B4D1FE solid; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 2px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; height: 20px; background-color: #EEF4FF ;background-image: url(../source/note003.gif);cursor: hand}
+.button2 { font-size: 12px; color: #000000; text-decoration: none; border: 1px B4D1FE solid; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 2px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; height: 20px; background-color: #FFFFFF ;background-image: url(../source/note003.gif);cursor: hand}
+	
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #428eff; TEXT-DECORATION: underline
+}
+
+A.curtarget:link {
+	COLOR: #000000;
+	TEXT-DECORATION: none;
+	background-color: #CCCCCC;
+}
+A.curtarget:visited {
+	COLOR: #000000;
+	TEXT-DECORATION: none;
+	background-color: #CCCCCC;
+}
+A.curtarget:hover {
+	COLOR: #000000;
+	TEXT-DECORATION: underline;
+	background-color: #CCCCCC;
+}
+A.uncurtarget:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.uncurtarget:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.uncurtarget:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+
+
+
+
+TR.forumRowHighlight {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; BACKGROUND: #e4edf9; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+TR.forumRow {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; BACKGROUND: #F8F8F9; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+
+TD {
+	FONT-SIZE: 12px
+}
+TD.forumHeaderBackgroundAlternate {
+	BACKGROUND-IMAGE:  url("../source/admin_top_bg.gif"); COLOR: #000000; BACKGROUND-COLOR: #799ae1
+}
+TD.LetterRow {
+	PADDING-RIGHT: 3px;
+	PADDING-LEFT: 3px;
+	PADDING-BOTTOM: 3px;
+	PADDING-TOP: 3px;
+	font-size: 12px;
+	text-align: left;
+	vertical-align: middle;
+}
+TD.NumberRow {
+	PADDING-RIGHT: 3px;
+	PADDING-LEFT: 3px;
+	PADDING-BOTTOM: 3px;
+	PADDING-TOP: 3px;
+	font-size: 12px;
+	text-align: right;
+	vertical-align: middle;
+}
+TD.DateRow {
+	PADDING-RIGHT: 3px;
+	PADDING-LEFT: 3px;
+	PADDING-BOTTOM: 3px;
+	PADDING-TOP: 3px;
+	font-size: 12px;
+	text-align: center;
+	vertical-align: middle;
+}
+TD.forumRow {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; BACKGROUND: #F8F8F9; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+TH {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND-IMAGE:  url("../source/admin_bg_1.gif"); COLOR: white; BACKGROUND-COLOR: #4455aa
+}
+TD.bodytitle {
+	BACKGROUND-IMAGE:  url("../source/admin_bg_2.gif")
+}
+TD.bodytitle1 {
+	BACKGROUND-IMAGE:  url("../source/admin_bg_3.gif")
+}
+TD.tablebody1 {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; BACKGROUND: #bebbdb; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+TD.forumRowHighlight {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; BACKGROUND: #e4edf9; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+
+.tableBorder {
+	BACKGROUND-COLOR: #ffffff;
+	border: 1px solid #999999;
+}
+.tableBorder1 {
+	BACKGROUND-COLOR: #ffffff;
+	border: 0px solid #999999;
+}
+
+.helplink {
+	FONT: 10px verdana,arial,helvetica,sans-serif; CURSOR: help; TEXT-DECORATION: none
+}
+.copyright {
+	PADDING-RIGHT: 1px; BORDER-TOP: #6595d6 1px dashed; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; FONT: 11px verdana,arial,helvetica,sans-serif; COLOR: #4455aa; PADDING-TOP: 1px; TEXT-DECORATION: none
+}
+.mustselect {
+	font-size: 12px;
+	color: #FF0000;
+	margin-right: 5px;
+}

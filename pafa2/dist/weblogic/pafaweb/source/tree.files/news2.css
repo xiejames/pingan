@@ -1,0 +1,159 @@
+BODY {
+	FONT-SIZE: 12px; LINE-HEIGHT: 150%; FONT-FAMILY: ËÎÌו
+}
+A:link {
+	COLOR: #0000cc; TEXT-DECORATION: underline
+}
+A:visited {
+	COLOR: #800080; TEXT-DECORATION: underline
+}
+A:active {
+	COLOR: #800080; TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+TABLE {
+	FONT-SIZE: 12px; LINE-HEIGHT: 150%; FONT-FAMILY: "ËÎÌו"
+}
+.f14 {
+	FONT-SIZE: 14px; LINE-HEIGHT: 160%
+}
+.f14black {
+	FONT-SIZE: 14px; COLOR: #000000; LINE-HEIGHT: 160%
+}
+.f14B {
+	FONT-SIZE: 14px; LINE-HEIGHT: 160%
+}
+.f14B:link {
+	COLOR: #0000cc
+}
+.f14B:visited {
+	COLOR: #0000cc
+}
+.f14BW {
+	FONT-SIZE: 14px; LINE-HEIGHT: 160%
+}
+.f14BW:link {
+	COLOR: #ffffff
+}
+.f14BWW {
+	FONT-SIZE: 14px; COLOR: #ffffff; LINE-HEIGHT: 160%
+}
+.f14BWW:visited {
+	COLOR: #ffffff
+}
+.f14BWW:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.f14BWW {
+	FONT-SIZE: 14px; LINE-HEIGHT: 160%
+}
+.f14BWW:link {
+	COLOR: #ffffff
+}
+.f14BW:visited {
+	COLOR: #ffffff
+}
+.f12:link {
+	COLOR: #000000
+}
+.f12B {
+	FONT-WEIGHT: bold
+}
+.f12B:link {
+	COLOR: #090d95
+}
+.f12red:link {
+	COLOR: #ff0000
+}
+.163s {
+	FONT-SIZE: 12px
+}
+.163s:link {
+	COLOR: #000000
+}
+.163s:visited {
+	COLOR: #000000
+}
+.163s1 {
+	FONT-SIZE: 12px
+}
+.163s1:link {
+	COLOR: #000000
+}
+.head {
+	FONT-SIZE: 12px
+}
+.head:link {
+	COLOR: #ffffff
+}
+.head:visited {
+	COLOR: #ffffff
+}
+.head:hover {
+	COLOR: #fff85f
+}
+.head2 {
+	FONT-SIZE: 12px
+}
+.head2:link {
+	COLOR: #fff85f
+}
+.head2:visited {
+	COLOR: #fff85f
+}
+.head2:hover {
+	COLOR: #ffffff
+}
+.map {
+	FONT-SIZE: 12px
+}
+.map:link {
+	COLOR: #000000
+}
+.map:visited {
+	COLOR: #000000
+}
+.map:hover {
+	COLOR: #ff0000
+}
+.time {
+	FONT-SIZE: 11px; COLOR: #656565
+}
+.bb {
+	FONT-SIZE: 7px; COLOR: #000000
+}
+.bbs {
+	FONT-SIZE: 5px; COLOR: #000000
+}
+.c {
+	FONT-WEIGHT: bold; FONT-SIZE: 24px; COLOR: #0000cc; LINE-HEIGHT: 50px; FONT-FAMILY: ËÎÌו
+}
+.bluebb {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #007fcc
+}
+.bluesb {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #0899dd
+}
+.bluesb:link {
+	COLOR: #0899dd
+}
+.blackb {
+	FONT-SIZE: 14px; COLOR: #000000; LINE-HEIGHT: 150%
+}
+.pt {
+	FONT-SIZE: 16px
+}
+.f14t1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #ffffff; LINE-HEIGHT: 160%
+}
+.f14t2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #fe7d06; LINE-HEIGHT: 160%
+}
+.f14t3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #0401ce; LINE-HEIGHT: 160%
+}
+.titletext {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #ffffff; FONT-FAMILY: "verdana", "helvetica", "sans-serif"; TEXT-DECORATION: none
+}

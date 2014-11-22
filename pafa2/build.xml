@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="GB2312"?>
+
+<project name="pafa2" basedir="." default="usage">
+    <!-- =================================================================== -->
+    <!-- 变量设置 -->
+    <!-- =================================================================== -->
+    <property file="build.properties"/>
+    <property name="project.root" value="."/>
+	
+    <!-- 代码目录 -->
+    <property name="src.dir" value="${project.root}/src"/>
+    <property name="lib.dir" value="${project.root}/lib"/>
+    <property name="src.java.dir" value="${src.dir}/java"/>
+    <property name="src.jsp.dir" value="${src.dir}/${project.webapplication.name}"/>
+    <property name="src.config.dir" value="${src.dir}/config"/>
+
+    <!-- 临时编译目录 -->
+    <property name="build.dir" value="${project.root}/build"/>
+
+    <!-- Java编译CLASSPATH -->
+    <path id="master-classpath">
+        <fileset dir="${pafa.lib}"/>        
+        <fileset file="${weblogic.jar}"/>
+    </path>
+
+    <target name="clean" description="清空所有输出文件包括build和部署目录">
+        <delete dir="${build.dir}"/>        
+    	<delete dir="${deploy.war.dir}"/>
+    </target>
+
+    <target name="compile" description="编译Java文件" depends="clean">
+        <mkdir dir="${build.dir}"/>
+        <javac destdir="${build.dir}"  target="1.4" source="1.4" debug="true"
+            deprecation="false" optimize="false" failonerror="true">
+            <src path="${src.java.dir}"/>
+            <classpath refid="master-classpath"/>
+        </javac>
+        <copy todir="${build.dir}">
+          <fileset dir="${src.java.dir}">
+          	<include name="**/*.properties"/>
+          </fileset>
+        </copy>    	
+    </target>
+    <target name="war" description="打war包" depends="compile">
+		<copy todir="${deploy.war.dir}/WEB-INF">
+            <fileset dir="${src.config.dir}/web">
+            	<include name="*.xml"/>
+            </fileset>
+          </copy>  
+          <copy todir="${deploy.war.dir}/WEB-INF/classes">
+            <fileset dir="${build.dir}">
+            	<include name="${application.package}/web/**"/>
+                <include name="${application.package}/common/**"/>  
+            	<include name="${application.package}/biz/interfaces/**"/>
+            </fileset>
+          </copy> 
+          <copy todir="${deploy.war.dir}">
+            <fileset dir="${src.dir}/${project.webapplication.name}">
+            	<include name="**/*.*"/>
+            </fileset>
+          </copy>
+        <copy todir="${deploy.war.dir}/WEB-INF/lib">
+          <fileset dir="${lib.dir}">
+          	<include name="*.jar"/>
+          </fileset>
+        </copy>
+         <jar basedir="${deploy.war.dir}" jarfile="${deploy.war.dir}/../${project.webapplication.name}.war" compress="false"/> 
+    
+    </target>
+    <target name="jar" description="打jar包" depends="compile">
+        <copy todir="${deploy.jar.dir}/META-INF">
+            <fileset dir="${src.config.dir}/ejb">
+                <include name="*.xml"/>
+            </fileset>
+          </copy>  
+          <copy todir="${deploy.jar.dir}">
+            <fileset dir="${build.dir}">
+                <include name="${application.package}/biz/**"/>
+               	<include name="${application.package}/integration/**"/>
+                <include name="${application.package}/common/**"/>                
+            </fileset>
+          </copy>   
+         <jar basedir="${deploy.jar.dir}" jarfile="${deploy.jar.dir}/../${project.name}.jar" compress="false"/> 
+    
+    </target>
+
+    <target name="ear" description="打ear包" depends="jar,war">
+        <copy todir="${deploy.ear.dir}/META-INF">
+            <fileset dir="${src.config.dir}/app">
+                <include name="*.xml"/>
+            </fileset>
+          </copy>  
+          <copy todir="${deploy.ear.dir}">
+            <fileset dir="${deploy.dir}">
+                <include name="*.jar"/>
+            	<include name="*.war"/>
+            </fileset>
+          </copy>
+         <jar basedir="${deploy.ear.dir}" jarfile="${deploy.ear.dir}/../${project.name}.ear" compress="false"/> 
+    </target>
+
+    <!-- =================================================================== -->
+    <!-- 帮助信息 -->
+    <!-- =================================================================== -->
+    <target name="usage">
+        <echo message="Pafa Application Build File"/>
+        <echo message="用法：ant -[target]"/>
+        <echo message="------------------------------------------------------"/>
+        <echo message="[target]"/>
+        <echo message="clean        --> 清空所有输出文件包括build和部署目录"/>
+        <echo message="compile      --> 编译Java文件"/>
+        <echo message="war          --> 创建用于发布的WAR包文件"/>       
+        <echo message="------------------------------------------------------"/>
+    </target>
+</project>

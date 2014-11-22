@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="GB2312"?>
+<screen-definitions>
+	<template name="index">
+		<url>/index.jsp</url>
+	</template>
+	<template name="error">
+		<url>/page/error.jsp</url>
+	</template>
+	<template name="Insert">
+		<url>/page/insert.jsp</url>
+	</template>
+	<template name="InsertResult">
+		<url>/page/insertresult.jsp</url>
+	</template>
+	<template name="Query">
+		<url>/page/query.jsp</url>
+	</template>
+	<template name="QueryResult">
+		<url>/page/queryresult.jsp</url>
+	</template>
+	<template name="Update">
+		<url>/page/update.jsp</url>
+	</template>
+	<template name="UpdateResult">
+		<url>/page/updateresult.jsp</url>
+	</template>
+	<template name="Delete">
+		<url>/page/delete.jsp</url>
+	</template>
+	<template name="DeleteResult">
+		<url>/page/deleteresult.jsp</url>
+	</template>
+	
+	<screen name="index.screen" template="index"></screen>
+	<screen name="Error.screen" template="error"></screen>
+	<screen name="insertPolicy.screen" template="Insert"></screen>
+	<screen name="InsertResult.screen" template="InsertResult"></screen>
+	<screen name="queryPolicy.screen" template="Query"></screen>
+	<screen name="QueryResult.screen" template="QueryResult"></screen>
+	<screen name="Update.screen" template="Update"></screen>
+	<screen name="UpdateResult.screen" template="UpdateResult"></screen>
+	<screen name="Delete.screen" template="Delete"></screen>
+	<screen name="DeleteResult.screen" template="DeleteResult"></screen>
+</screen-definitions>
